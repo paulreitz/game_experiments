@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="title-text">Game Experiments</div>
+    <div class="menu-container">
+        <div 
+            *ngFor="let item of menuItems; let i = index"
+            [class]="{
+                'menu-item': true,
+                'menu-item-selected': i === selectedMenuItem
+            }">{{ item | translate }}</div>
+    </div>
+    <div class="control-display">
+        <div class="controls" *ngIf="dialogOpen === false">
+            <div class="control-container select-container">
+                <div class="control-icon-container">
+                    <span class="control-icon-text" *ngIf="usingKeyboard === true">{{ selectIcon }}: </span>
+                    <img src="assets/img/icons/{{selectIcon}}" class="control-icon-image" *ngIf="usingKeyboard === false">
+                </div>
+                <div class="control-text select-control-text">Select</div>
+            </div>
+        </div>
+    </div>
+    <div class="title-message-container" *ngIf="canSerialize === false">
+        <div class="message">Saving games is not supported. This is likely due to a security setting in your browser. "Start" will take you directly into a new game.</div>
+    </div>
+</div>

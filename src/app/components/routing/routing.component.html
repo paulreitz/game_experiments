@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="route">
+    <ng-container *ngSwitchCase="routes.MENU">
+        <app-title></app-title>
+    </ng-container>
+    <ng-container *ngSwitchCase="routes.GAME">
+        <app-game></app-game>
+    </ng-container>
+</ng-container>

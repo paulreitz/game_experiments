@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="bar upper-bar"></div>
+    <div class="bar lower-bar">
+        <div class="bar-item item-left"></div>
+        <div class="bar-item item-right">
+            <div class="control-container select-container">
+                <div class="control-icon-container">
+                    <span class="control-icon-text" *ngIf="usingKeyboard === true">{{ jumpIcon }}: </span>
+                    <img src="assets/img/icons/{{jumpIcon}}" class="control-icon-image" *ngIf="usingKeyboard === false">
+                </div>
+                <div class="control-text select-control-text">Jump</div>
+            </div>
+        </div>
+    </div>
+</div>

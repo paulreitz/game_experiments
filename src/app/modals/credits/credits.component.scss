@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url('/assets/ui/window_02.png');
+    border-image-repeat: round;
+    border-image-slice: 75 30 54 18 fill;
+    border-image-width: 40px 20px 30px 10px;
+    color: #F2E6F2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 90%;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -13px;
+    margin-bottom: 5px;
+}
+
+.contents {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-item-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.section-item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    font-size: 18px;
+}
+
+.credit-dashes {
+    flex-grow: 1;
+    flex: 1;
+    max-height: 1px;
+    border-bottom: 1px dashed white;
+    margin: 0 10px;
+    margin-top: 5px;
+}
+
+.control-container {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -12px;
+    margin-right: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3px;
+    height: 35px;
+}
+
+.control-icon-text {
+    text-align: right;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.control-icon-image {
+    width: 25px;
+    margin-top: 8px;
+}
+
+.control-text {
+    width: 100px;
+    color: #F2E6F2;
+    font-size: 14px;
+    font-weight: 500;
+}

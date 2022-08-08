@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="section title">Credits</div>
+    <div class="section contents">
+        <div class="section-item">
+            <div class="section-item-title">Developers</div>
+            <div class="section-item-content">
+                <div class="credit-title">Developer</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">Pritt</div>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="section-item-title">Art</div>
+            <div class="section-item-content">
+                <div class="credit-title">Backgrounds</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">Szadi Art</div>
+            </div>
+            <div class="section-item-content">
+                <div class="credit-title">UI</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">Wenrexa</div>
+            </div>
+            <div class="section-item-content">
+                <div class="credit-title">UI</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">Arks</div>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="section-item-title">Audio</div>
+            <div class="section-item-content">
+                <div class="credit-title">SFX</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">Epic Stock Media</div>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="section-item-title">Music</div>
+            <div class="section-item-content">
+                <div class="credit-title">The Last</div>
+                <div class="credit-dashes"></div>
+                <div class="credit-name">David KDB</div>
+            </div>
+        </div>
+    </div>
+    <div class="control-container back-container">
+        <div class="control-icon-container">
+            <span class="control-icon-text" *ngIf="usingKeyboard === true">{{ backIcon }}: </span>
+            <img src="assets/img/icons/{{backIcon}}" class="control-icon-image" *ngIf="usingKeyboard === false">
+        </div>
+        <div class="control-text back-control-text">Go Back</div>
+    </div>
+</div>
